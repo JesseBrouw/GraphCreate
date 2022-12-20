@@ -8,7 +8,7 @@ From: ubuntu:xenial
     rm -rf /var/lib/apt/lists/*
 
     ## Get the sources and install pip dependencies.
-    git clone https://github.com/JesseBrouw/Thesis.git /planner
+    git clone https://github.com/JesseBrouw/GraphCreate.git /planner
     cd /planner
     pip install -r requirements.txt
 
