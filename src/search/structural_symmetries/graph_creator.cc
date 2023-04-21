@@ -133,7 +133,7 @@ struct DotGraph {
         ofstream file;
         file.open("symmetry-graph.txt");
         for(const DotNode &node : nodes){
-          file << node.label << "," << node.color << ",";
+          file << node.color << ",";
           const vector<int> &node_neighbors = neighbors[node.index];
           for(int neighbor:node_neighbors){
               file << neighbor << ",";
