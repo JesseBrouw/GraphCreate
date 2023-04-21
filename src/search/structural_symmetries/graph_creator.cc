@@ -131,11 +131,11 @@ struct DotGraph {
 
     void write_adjacency_matrix() const {
         ofstream file;
-        file.open ("symmetry-graph.txt");
+        file.open("symmetry-graph.txt");
         for(const DotNode &node : nodes){
           file << node.label << "," << node.color << ",";
           const vector<int> &node_neighbors = neighbors[node.index];
-          for (int neighbor:node_neighbors) {
+          for(int neighbor:node_neighbors){
               file << neighbor << ",";
         }
         file << endl;
